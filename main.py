@@ -17,6 +17,7 @@ if __name__ == "__main__":
 
     # Extract data
     df = extract(url)
-
     # Load data to CSV
     load_to_csv(df, csv_path)
+
+    print('success')
