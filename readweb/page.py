@@ -4,7 +4,7 @@ from .table import Table
 
 
 class Page:
-    def __init__(self, url, headers = {}) -> None:
+    def __init__(self, url:str, headers:dict = {}) -> None:
         self.url = url
         self.headers = headers
 

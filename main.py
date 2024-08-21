@@ -1,4 +1,4 @@
-from html_to_df import Page
+from readweb import Page
 
 def extract(url):
     return Page(url).get_tables()[2].toDataFrame()
