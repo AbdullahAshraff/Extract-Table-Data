@@ -1,12 +1,12 @@
 from readweb import Page
 
+
 def extract(url):
     return Page(url).get_tables()[2].toDataFrame()
 
 
 def load_to_csv(df, csv_path):
     df.to_csv(csv_path, index=False)
-
 
 
 if __name__ == "__main__":
@@ -20,4 +20,4 @@ if __name__ == "__main__":
     # Load data to CSV
     load_to_csv(df, csv_path)
 
-    print('success')
+    print("success")
